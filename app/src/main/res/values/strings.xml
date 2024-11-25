@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EKG app AB</string>
+
+
+        <string-array name="gender_array">
+            <item>Чоловік</item>
+            <item>Жінка</item>
+            <item>Інше</item>
+        </string-array>
+
+</resources>

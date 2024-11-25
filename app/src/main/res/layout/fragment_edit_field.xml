@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top"
+    android:layout_marginTop="50dp">
+
+    <!-- Кнопка назад та заголовок -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Назад"
+            android:drawableLeft="@drawable/ic_arrow_back_dark"
+            android:drawablePadding="0dp"
+            android:text=""
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Редагування"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Введіть нове значення"
+        android:padding="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@android:color/white"
+        android:layout_marginHorizontal="20dp" />
+
+    <!-- Поле для підтвердження паролю -->
+    <EditText
+        android:id="@+id/edit_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Підтвердіть пароль"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@android:color/white"
+        android:layout_marginHorizontal="20dp"
+        android:visibility="gone" />
+
+    <!-- Кнопка збереження -->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Зберегти" />
+</LinearLayout>

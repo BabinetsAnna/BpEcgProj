@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/topCont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_cont_bg"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_arrow_back_dark"
+            android:contentDescription="Назад" />
+
+        <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:layout_marginBottom="6dp">
+        <!-- Текст пульсу -->
+        <TextView
+            android:id="@+id/heartRateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HR: -- "
+            android:textSize="20sp"
+            android:layout_marginRight="1dp"
+            android:textColor="@android:color/black" />
+        <!-- Іконка серця -->
+        <ImageView
+            android:id="@+id/heartRateIc"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_heart"
+            android:layout_marginEnd="8dp" />
+
+
+    </LinearLayout>
+
+    <com.example.ekgappab.EcgGraphView
+        android:id="@+id/ecgGraphView1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_graph_bg"/>
+
+    <com.example.ekgappab.EcgGraphView
+        android:id="@+id/ecgGraphView2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_graph_bg" />
+
+    <com.example.ekgappab.EcgGraphView
+        android:id="@+id/ecgGraphView3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/rounded_graph_bg"/>
+</LinearLayout>

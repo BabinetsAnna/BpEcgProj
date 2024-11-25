@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/rounded_cont_bg"
+    android:layout_marginTop="6dp">
+
+    <!-- Верхня частина: дата -->
+    <TextView
+        android:id="@+id/bpDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01/01/2000 00:00"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:paddingBottom="4dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Середня частина: SYS/DIA -->
+    <TextView
+        android:id="@+id/bpDataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SYS/DIA: --/--"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- Нижня частина: пульс -->
+    <TextView
+        android:id="@+id/bpHeartRateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HR: -- bpm"
+        android:textColor="#7C7889"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout>

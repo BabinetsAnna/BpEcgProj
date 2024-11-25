@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Стиль для заголовка -->
+    <style name="TitleTextStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#9370DB</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <!-- Стиль для кнопок -->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#9370DB</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="BottomNavViewStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemRippleColor">@android:color/transparent</item> <!-- Прибирає ripple ефект -->
+        <item name="android:padding">0dp</item> <!-- Прибирає зайвий padding -->
+        <item name="android:foreground">@null</item> <!-- Забирає фон з переднього плану -->
+    </style>
+
+
+</resources>

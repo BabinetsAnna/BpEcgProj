@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Вкладки для перемикання між BP та ECG -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/bloodPressureTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Blood Pressure"
+            android:textSize="16sp"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/ecgTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="ECG"
+            android:textSize="16sp"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Роздільник -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7E64AB"
+        android:layout_marginBottom="5dp" />
+
+    <!-- Списки -->
+    <ScrollView
+        android:id="@+id/bpScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:contentDescription="bp data cont">
+
+        <LinearLayout
+            android:id="@+id/bpListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Шаблон для елемента списку -->
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/ecgScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ecgListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Шаблон для елемента списку -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

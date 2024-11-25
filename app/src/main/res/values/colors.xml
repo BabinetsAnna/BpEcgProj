@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navBackgroundColor">#9370DB</color>
+    <color name="headerBackgroundColor">#21A38EC8</color>
+    <color name="navDarkBackgroundColor">#7656B6</color>
+    <color name="headerText">#70648A</color>
+    <color name="activeTabColor">#38387A</color>
+    <color name="inactiveTabColor">#555568</color>
+    <color name="ecgGraphColor">#DAC9F2</color>
+    <color name="roundedContColor">#E1DCF6</color>
+
+</resources>
