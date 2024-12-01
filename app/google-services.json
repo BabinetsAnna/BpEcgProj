@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629265763004",
+    "project_id": "armfitplusapp",
+    "storage_bucket": "armfitplusapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629265763004:android:cef9ab3fcb827e47159eb9",
+        "android_client_info": {
+          "package_name": "com.example.ekgappab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1rrtfqzbhcIG8dHA4zNMfALYfE92z_do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
